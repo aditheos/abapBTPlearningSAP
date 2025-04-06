@@ -1,0 +1,11 @@
+@EndUserText.label: 'Access Control Demo'
+@MappingRole: true
+define role ZPSBTP_B_ACCESS_DEMO {
+    grant
+        select
+            on
+                zpsbtp_b_access_demo
+                    where
+                        (  country ) = aspect pfcg_auth ( /DMO/TRVL, /DMO/CNTRY, ACTVT = '03' );
+                        
+}

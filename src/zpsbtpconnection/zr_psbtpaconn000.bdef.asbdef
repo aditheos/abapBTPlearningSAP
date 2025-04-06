@@ -1,0 +1,60 @@
+managed implementation in class ZBP_R_PSBTPACONN000 unique;
+strict ( 2 );
+with draft;
+define behavior for ZR_PSBTPACONN000 alias Connections
+persistent table ZPSBTPACONN
+draft table ZPSBTPACONN000_D
+etag master Locallastchanged
+lock master total etag Lastchangedat
+authorization master( global )
+
+{
+  field ( readonly )
+   Uuid,
+   CityFrom,
+   CountryFrom,
+   CityTo,
+   CountryTo,
+   Createdby,
+   Lastchangedby,
+   Lastchangedat,
+   Locallastchanged;
+
+  field ( numbering : managed )
+   Uuid;
+
+  create;
+  update;
+  delete;
+
+  draft action Activate optimized;
+  draft action Discard;
+  draft action Edit;
+  draft action Resume;
+  draft determine action Prepare;
+
+  validation CheckSemanticData on save {create;update;}
+
+  determination SetCities on save { field AirportFromId, AirportToId; }
+  mapping for ZPSBTPACONN
+  {
+    Uuid = uuid;
+    CarrierId = carrier_id;
+    ConnectionId = connection_id;
+    AirportFromId = airport_from_id;
+    CityFrom = city_from;
+    CountryFrom = country_from;
+    AirportToId = airport_to_id;
+    CityTo = city_to;
+    CountryTo = country_to;
+    DepartureTime = departure_time;
+    ArrivalTime = arrival_time;
+    Distance = distance;
+    DistanceUnit = distance_unit;
+    Createdby = createdby;
+    Createdat = createdat;
+    Lastchangedby = lastchangedby;
+    Lastchangedat = lastchangedat;
+    Locallastchanged = locallastchanged;
+  }
+}

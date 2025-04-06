@@ -1,0 +1,230 @@
+@Metadata.layer: #CORE
+@UI.headerInfo.title.type: #STANDARD
+@UI.headerInfo.title.value: 'Uuid'
+@UI.headerInfo.description.type: #STANDARD
+@UI.headerInfo.description.value: 'Uuid'
+annotate view ZC_PSBTPACONN000 with
+{
+  @EndUserText.label: 'Uuid'
+  @UI.facet: [ {
+    label: 'General Information', 
+    id: 'GeneralInfo', 
+    purpose: #STANDARD, 
+    position: 10 , 
+    type: #IDENTIFICATION_REFERENCE
+  } ]
+  @UI.identification: [ {
+    position: 10 , 
+    label: 'Uuid'
+  } ]
+  @UI.lineItem: [ {
+    position: 10 , 
+    label: 'Uuid'
+  } ]
+  @UI.selectionField: [ {
+    position: 10 
+  } ]
+   @UI.hidden: true
+  Uuid;
+  
+  @UI.identification: [ {
+    position: 20 
+  } ]
+  @UI.lineItem: [ {
+    position: 20 
+  } ]
+  @UI.selectionField: [ {
+    position: 20 
+  } ]
+  CarrierId;
+  
+  @UI.identification: [ {
+    position: 30 
+  } ]
+  @UI.lineItem: [ {
+    position: 30 
+  } ]
+  @UI.selectionField: [ {
+    position: 30 
+  } ]
+  ConnectionId;
+  
+  @UI.identification: [ {
+    position: 40 
+  } ]
+  @UI.lineItem: [ {
+    position: 40 
+  } ]
+  @UI.selectionField: [ {
+    position: 40 
+  } ]
+  AirportFromId;
+  
+  @UI.identification: [ {
+    position: 50,
+    label: 'City From' 
+  } ]
+  @UI.lineItem: [ {
+    position: 50,
+    label: 'City From'  
+  } ]
+  @UI.selectionField: [ {
+    position: 50 
+  } ]
+  CityFrom;
+  
+  @UI.identification: [ {
+    position: 60,
+    label: 'Country From'  
+  } ]
+  @UI.lineItem: [ {
+    position: 60,
+    label: 'Country From'  
+  } ]
+  @UI.selectionField: [ {
+    position: 60 
+  } ]
+  CountryFrom;
+  
+  @UI.identification: [ {
+    position: 70 
+  } ]
+  @UI.lineItem: [ {
+    position: 70 
+  } ]
+  @UI.selectionField: [ {
+    position: 70 
+  } ]
+  AirportToId;
+  
+  @UI.identification: [ {
+    position: 80,
+    label: 'City To'  
+  } ]
+  @UI.lineItem: [ {
+    position: 80,
+    label: 'City To'   
+  } ]
+  @UI.selectionField: [ {
+    position: 80 
+  } ]
+  
+  CityTo;
+  
+  @UI.identification: [ {
+    position: 90,
+    label: 'Country To'   
+  } ]
+  @UI.lineItem: [ {
+    position: 90,
+    label: 'Country To'   
+  } ]
+  @UI.selectionField: [ {
+    position: 90 
+  } ]
+  CountryTo;
+  
+  @UI.identification: [ {
+    position: 100 
+  } ]
+  @UI.lineItem: [ {
+    position: 100 
+  } ]
+  @UI.selectionField: [ {
+    position: 100 
+  } ]
+  DepartureTime;
+  
+  @UI.identification: [ {
+    position: 110 
+  } ]
+  @UI.lineItem: [ {
+    position: 110 
+  } ]
+  @UI.selectionField: [ {
+    position: 110 
+  } ]
+  ArrivalTime;
+  
+  @UI.identification: [ {
+    position: 120 
+  } ]
+  @UI.lineItem: [ {
+    position: 120 
+  } ]
+  @UI.selectionField: [ {
+    position: 120 
+  } ]
+  Distance;
+  
+  @UI.identification: [ {
+    position: 130 
+  } ]
+  @UI.lineItem: [ {
+    position: 130 
+  } ]
+  @UI.selectionField: [ {
+    position: 130 
+  } ]
+  DistanceUnit;
+  
+  @UI.identification: [ {
+    position: 140 
+  } ]
+  @UI.lineItem: [ {
+    position: 140 
+  } ]
+  @UI.selectionField: [ {
+    position: 140 
+  } ]
+   @UI.hidden: true
+  Createdby;
+  
+  @UI.identification: [ {
+    position: 150 
+  } ]
+  @UI.lineItem: [ {
+    position: 150 
+  } ]
+  @UI.selectionField: [ {
+    position: 150 
+  } ]
+   @UI.hidden: true
+  Createdat;
+  
+  @UI.identification: [ {
+    position: 160 
+  } ]
+  @UI.lineItem: [ {
+    position: 160 
+  } ]
+  @UI.selectionField: [ {
+    position: 160 
+  } ]
+   @UI.hidden: true
+  Lastchangedby;
+  
+  @UI.identification: [ {
+    position: 170 
+  } ]
+  @UI.lineItem: [ {
+    position: 170 
+  } ]
+  @UI.selectionField: [ {
+    position: 170 
+  } ]
+   @UI.hidden: true
+  Lastchangedat;
+  
+  @UI.identification: [ {
+    position: 180 
+  } ]
+  @UI.lineItem: [ {
+    position: 180 
+  } ]
+  @UI.selectionField: [ {
+    position: 180 
+  } ]
+   @UI.hidden: true
+  Locallastchanged;
+}

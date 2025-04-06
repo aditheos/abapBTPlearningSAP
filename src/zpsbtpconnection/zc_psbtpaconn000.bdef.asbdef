@@ -1,0 +1,17 @@
+projection implementation in class ZBP_C_PSBTPACONN000 unique;
+strict ( 2 );
+use draft;
+define behavior for ZC_PSBTPACONN000 alias Connections
+use etag
+
+{
+  use create;
+  use update;
+  use delete;
+
+  use action Edit;
+  use action Activate;
+  use action Discard;
+  use action Resume;
+  use action Prepare;
+}

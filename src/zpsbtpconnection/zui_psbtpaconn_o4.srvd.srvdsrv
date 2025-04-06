@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_PSBTPACONN000'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_PSBTPACONN000'
+  }
+}
+define service ZUI_PSBTPACONN_O4 provider contracts odata_v4_ui {
+  expose ZC_PSBTPACONN000 as Connections;
+}

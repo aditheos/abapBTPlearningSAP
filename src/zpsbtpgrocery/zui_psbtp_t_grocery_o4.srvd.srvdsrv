@@ -1,0 +1,12 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_PSBTP_T_GROCERY'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_PSBTP_T_GROCERY'
+  }
+}
+define service ZUI_PSBTP_T_GROCERY_O4
+  provider contracts odata_v4_ui {
+  expose ZC_PSBTP_T_GROCERY as Grocery;
+}
