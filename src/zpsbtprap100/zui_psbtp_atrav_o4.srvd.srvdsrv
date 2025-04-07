@@ -1,0 +1,11 @@
+@EndUserText: {
+  label: 'Service Definition for ZC_PSBTP_ATRAV'
+}
+@ObjectModel: {
+  leadingEntity: {
+    name: 'ZC_PSBTP_ATRAV'
+  }
+}
+define service ZUI_PSBTP_ATRAV_O4 provider contracts odata_v4_ui {
+  expose ZC_PSBTP_ATRAV as Travel;
+}

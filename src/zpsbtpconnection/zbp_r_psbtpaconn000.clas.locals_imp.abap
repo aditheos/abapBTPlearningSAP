@@ -51,7 +51,7 @@ CLASS lhc_zr_psbtpaconn000 IMPLEMENTATION.
         ls_reported-%element-carrierid = if_abap_behv=>mk-on.
         ls_reported-%element-connectionid = if_abap_behv=>mk-on.
         APPEND ls_reported TO reported-connections.
-
+        APPEND VALUE #( %tky                       = ls_conn-%tky ) TO failed-connections.
       ELSE.
         " Check Airports are not same
         IF ls_conn-AirportFromId = ls_conn-AirportToId.
@@ -69,6 +69,7 @@ CLASS lhc_zr_psbtpaconn000 IMPLEMENTATION.
           ls_reported-%element-airportfromid = if_abap_behv=>mk-on.
           ls_reported-%element-airporttoid = if_abap_behv=>mk-on.
           APPEND ls_reported TO reported-connections.
+          APPEND VALUE #( %tky                       = ls_conn-%tky ) TO failed-connections.
         ELSE.
           " Check for Duplicate Entry
           SELECT FROM zpsbtpaconn
@@ -100,6 +101,7 @@ CLASS lhc_zr_psbtpaconn000 IMPLEMENTATION.
             ls_reported-%element-carrierid = if_abap_behv=>mk-on.
             ls_reported-%element-connectionid = if_abap_behv=>mk-on.
             APPEND ls_reported TO reported-connections.
+            APPEND VALUE #( %tky                       = ls_conn-%tky ) TO failed-connections.
           ENDIF.
         ENDIF.
       ENDIF.

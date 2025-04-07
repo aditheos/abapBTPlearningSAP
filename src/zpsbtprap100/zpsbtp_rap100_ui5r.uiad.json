@@ -1,0 +1,34 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "Travel Application",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "appType": "ui5",
+    "catalogId": "SAP_TC_UI5_REPO_UIAD"
+  },
+  "ui5AppDetails": {
+    "appId": "com.aditheos.zpsbtprap100.zpsbtprap100"
+  },
+  "navigation": {
+    "targetMappingId": "UI5R_C83E94FF5E0D5C657A1484AEE7C5F2240C182395_TM",
+    "semanticObject": "zpsbtprap100",
+    "action": "display",
+    "desktop": true,
+    "tablet": true,
+    "phone": true
+  },
+  "tiles": [
+    {
+      "id": "UI5R_C83E94FF5E0D5C657A1484AEE7C5F2240C182395_AL",
+      "tileType": "static",
+      "isDefault": true,
+      "standard": {
+        "title": "Travel Application",
+        "subtitle": "Fiori (PSBTP)"
+      }
+    }
+  ]
+}

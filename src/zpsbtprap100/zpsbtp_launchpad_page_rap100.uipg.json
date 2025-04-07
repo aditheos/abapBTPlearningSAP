@@ -1,0 +1,26 @@
+{
+  "formatVersion": "1",
+  "header": {
+    "description": "RAP100",
+    "originalLanguage": "en",
+    "abapLanguageVersion": "cloudDevelopment"
+  },
+  "generalInformation": {
+    "title": "RAP100 (PSBTP)"
+  },
+  "sections": [
+    {
+      "id": "RAP100_1",
+      "title": "Beginner RAP100",
+      "visualizations": [
+        {
+          "id": "RAP100_1_VIZ_1",
+          "ladiAssignment": {
+            "ladiId": "ZPSBTP_RAP100_UI5R",
+            "tileId": "UI5R_C83E94FF5E0D5C657A1484AEE7C5F2240C182395_AL"
+          }
+        }
+      ]
+    }
+  ]
+}
